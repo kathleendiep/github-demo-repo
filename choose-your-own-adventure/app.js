@@ -54,7 +54,7 @@ let health = 0;
 
 // eat - loses $5 meal
 let money = 100; 
-
+let inventory = [];
 
  
 
@@ -123,3 +123,5 @@ function getStatus() {
     }
 
 }
+
+
