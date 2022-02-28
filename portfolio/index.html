@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<style>
+body{
+    background-color:#FAC08E; 
+    color: white;
+}
+
+body a{
+    color: white;
+}
+
+
+
+/* }
+nav{
+    background-color: grey;
+}
+
+ul {
+ display:flex;
+ justify-content: space-around;
+ align-items: left;
+ flex-direction: column;
+ border: 5px solid blue;
+} */
+
+.button {
+  background-color: white;
+  color: #FAC08E; 
+  cursor: pointer;
+  font-size: 20px;
+  margin: 10px auto;
+  padding: 0px 30px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 50px;
+}
+#big-menu {
+  background-color: rgba(7,34,53,1);
+  bottom: 0;
+  left: 50%;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  overflow-y: scroll;
+  padding: 15px 30px;
+  position: fixed;
+  transition: all 0.45s ease-in-out;
+  transform: translateX(100%);
+  z-index: 10;
+}
+
+#big-menu.toggle-open {
+  transform: translateX(0%);
+  opacity: 1;
+}
+
+
+#big-menu a, #big-menu a:focus, #big-menu a:visited {
+  color: white;
+  display: block;
+  font-size: 50px;
+  margin: 25px auto;
+  text-align: center;
+  text-decoration: none;
+}
+#big-menu-close {
+  background-color: white;
+  color: darkred;
+}
+
+main {
+   display:flex;
+   justify-content: space-around;
+   align-items: center;
+   flex-direction: column;
+}
+
+.kathleen {
+    background-repeat: no-repeat;
+    background-size: 300px 10px;
+    background-color: black;
+}
+
+</style>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kathleen Diep</title>
+    
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+    <link href="styles.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        console.log('body')
+    </script>
+    <header>
+
+        software developer + teamplayer + problem solver + entrepreneur
+
+
+        <p class="button" id="menu-1">Click me</p>
+            <!-- <div class="menu-box" id="menu-1">
+        
+            </div> -->
+
+    <aside id="big-menu">
+        <a href="resume.html">Resume</a>
+        <a href="projects.html">Projects</a>
+        <a href="https://github.com/kathleendiep">Github</a>
+        <a href="https://www.linkedin.com/in/kathleen-diep/">LinkedIn</a>
+        <div class="button" id="big-menu-close">Close it</div>
+    </aside>      
+          
+
+    </header>
+    <main>
+        <h1 class="kathleen">Hello! My name is Kathleen! </h1>
+    </main>
+</body>
+</html>
+
+
